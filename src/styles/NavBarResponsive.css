@@ -1,0 +1,66 @@
+.nav-res-container {
+  width: 269px;
+  height: 69px;
+  position: fixed;
+  border-right: 1px solid #555555;
+  border-top-left-radius: 30px;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 10;
+  background-color: #313031;
+  font-size: 13.2px;
+}
+
+.nav-res-header-cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+  border-bottom: 1px solid #555555;
+}
+
+.nav-res-header-picture {
+  width: 35px;
+  height: 35px;
+}
+
+.nav-res-header-username {
+  margin-left: -30px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.nav-res-exit-icon {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-res-main-cont div {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555555;
+  border-right: 1px solid #555555;
+  background-color: #313031;
+  z-index: 10;
+}
+
+.nav-res-main-cont div button {
+  color: white;
+  background: transparent;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-res-main-cont svg {
+  color: rgb(162, 161, 161);
+}

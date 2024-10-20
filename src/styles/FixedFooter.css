@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  position: sticky;
+  display: flex;
+  font-size: 10px;
+  background-color: #313031;
+  padding: 5px 5px;
+  transform: translateX(-1px);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top: 1px solid #555555;
+  bottom: 0;
+  width: 350px;
+}
+
+.footer-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-component * {
+  color: rgb(168, 168, 168);
+}
+
+.icon {
+  height: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.nova-assistant {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}

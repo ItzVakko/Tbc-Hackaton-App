@@ -1,0 +1,195 @@
+.joint {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #1d1c21;
+  padding-top: 10px;
+  height: 100%;
+  margin-top: 48px;
+}
+
+.joint-balance {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: rgb(38, 37, 41);
+}
+
+.joint-balance > div h1 {
+  font-size: 32px;
+  color: white;
+  margin-top: 5px;
+}
+
+.joint-balance > div h1 span {
+  color: rgb(183, 182, 182);
+}
+
+.joint-balance > div h2 {
+  font-size: 20px;
+  color: white;
+}
+
+.joint-balance > div p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgb(183, 182, 182);
+}
+
+.joint-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.joint-cards-container div {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.joint-cards-container div:nth-child(1) {
+  background-color: aqua;
+}
+
+.joint-cards-container div:nth-child(2) {
+  background-color: yellow;
+  transform: translateX(-10px);
+  margin-top: -40px;
+}
+
+.joint-cards-container div:nth-child(3) {
+  background-color: rgb(255, 29, 29);
+  transform: translateX(-20px);
+  margin-top: -40px;
+}
+
+.joint-cards-container div:nth-child(4) {
+  background-color: orange;
+  transform: translateX(-30px);
+  margin-top: -40px;
+}
+
+.joint-progress {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgb(38, 37, 41);
+}
+
+.joint-progress h3 {
+  color: rgb(183, 182, 182) !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.joint-progress h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.joint-progress-bar {
+  width: 100%;
+  margin-top: 15px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(55, 55, 59);
+}
+
+.joint-progress-percent {
+  height: 20px;
+  border-radius: 10px;
+  width: 40%;
+  display: grid;
+  place-items: center;
+  background-color: #4791fc;
+  color: white;
+}
+
+.joint-players {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: rgb(38, 37, 41);
+}
+
+.joint-players-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.joint-players-title h2 {
+  font-size: 18px;
+  color: white;
+}
+
+.joint-players-add {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(55, 55, 59);
+  border-radius: 100%;
+}
+
+.joint-players-add:hover {
+  cursor: pointer;
+}
+
+.joint-players-progress-money {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.joint-players-progress-money div {
+  width: 40px;
+  height: 150px;
+  background-color: rgb(74, 73, 73);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+}
+
+.joint-players-progress-money div div {
+  width: 100%;
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.joint-players-avatars {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.joint-first-avatar {
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+}
+
+.joint-first-avatar p {
+  max-width: 45px;
+  overflow-wrap: break-word;
+  color: white;
+}
+
+.joint-first-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.joint-first-avatar:hover {
+  cursor: pointer;
+}
