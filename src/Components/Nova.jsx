@@ -1,13 +1,11 @@
 import "../styles/Nova.css";
 import React, { useState, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import novaIcon from "../Assets/Images/nova-assistant.png";
 
 const Nova = () => {
   const [message, setMessage] = useState("");
-  const [showChat, setShowChat] = useState(true); 
+  const [showChat, setShowChat] = useState(true);
   const chatContainerRef = useRef(null);
-  const navigate = useNavigate();
 
   const paymentHistory = [
     { date: "2024-10-01", category: "Groceries", amount: 150 },

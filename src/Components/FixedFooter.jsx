@@ -20,7 +20,7 @@ const FixedFooter = ({ isFirstTime, setIsFirstTime }) => {
       <div className="footer-component">
         <FontAwesomeIcon icon={faHouse} className="icon" />
         <a href="/">მთავარი</a>
-        </div>
+      </div>
       <div className="footer-component">
         <FontAwesomeIcon icon={faMobileScreen} className="icon" />
         <p>შევსება </p>

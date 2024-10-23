@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(211, 221, 230);
+}
+
 .app-parent-container {
   display: flex;
   justify-content: center;
@@ -14,7 +18,7 @@
   overflow: hidden;
 }
 
- .app-container {
+.app-container {
   width: 350px;
   height: 650px;
   border: 1px solid black;
@@ -22,11 +26,9 @@
   overflow: hidden;
   overflow-y: auto;
   scrollbar-width: none;
-} 
+}
 
-
-
- .chat-container {
+.chat-container {
   max-width: 315px;
   max-height: 540px;
   position: absolute;
@@ -39,14 +41,11 @@
   gap: 10px;
   scroll-behavior: smooth;
   overflow-y: scroll;
-} 
+}
 
 .chat-container::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
- 
-
-
 
 .no-space {
   width: 350px;

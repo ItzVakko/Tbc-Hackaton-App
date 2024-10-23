@@ -12,7 +12,7 @@ function App() {
   const [isFirstTime, setIsFirstTime] = useState(true);
   const [novaMessage, setNovaMessage] = useState("");
   const [showFollowUpChoices, setShowFollowUpChoices] = useState(false);
-  const chatEndRef = useRef(null); 
+  const chatEndRef = useRef(null);
   const navigate = useNavigate();
 
   const chatContainerRef = useRef(null);
@@ -40,9 +40,9 @@ function App() {
           <p>
             თუ თქვენ და თქვენს ირგვლივ მყოფთ გაქვთ ერთი საერთო მიზანი და ამ
             მიზნის მისაღწევად გესაჭროვებათ სახსრები, შეგიძლიათ, “ყველა
-            ერთისთვის”-ში, ერთად დააგროვოთ საჭირო თანახა და ამასთან ერთად,
-            იხილოთ თქვენი პროგრესი! მე დაგეხმარებით საჭირო ინფორმაციის
-            მოწოდებასა და სხვადასხვა პრობლემების გადაჭრაში! 
+            ერთისთვის”-ში, ერთად დააგროვოთ საჭირო თანხა და ამასთან ერთად, იხილოთ
+            თქვენი პროგრესი! მე დაგეხმარებით საჭირო ინფორმაციის მოწოდებასა და
+            სხვადასხვა პრობლემების გადაჭრაში!
           </p>
         </div>
       );
@@ -97,19 +97,24 @@ function App() {
         {isFirstTime ? (
           ""
         ) : (
-          <div ref = {chatContainerRef}className="chat-container">
+          <div ref={chatContainerRef} className="chat-container">
             <div className="nova">
               <img className="nova-image" src={NovaAssistant} alt="nova logo" />
               <div className="nova-text-box">
                 <p>
-                  მოგესალმებით, ჩემი სახელია ნოვა. მე ვარ თიბისის ხელოვნური ინტელექტი.
-                  მე გაგაცნობ სიახლეებს ახალ განახლებებთან დაკავშირებით და დაგეხმარები მათთან ადაპტირებაში.
-                  გნებავს დაიწყო ჩატი NOVA-სთან თუ ახალი განახლებების შესახებ გინდა ინფორამციის მოსმენა?
+                  მოგესალმებით, ჩემი სახელია ნოვა. მე ვარ თიბისის დამხმარე
+                  ასისტენტი. მე გაგაცნობ სიახლეებს ახალ განახლებებთან
+                  დაკავშირებით და დაგეხმარები მათთან ადაპტირებაში. გნებავს
+                  დაიწყო ჩატი NOVA-სთან თუ ახალი განახლებების შესახებ გინდა
+                  ინფორამციის მოსმენა?
                 </p>
               </div>
             </div>
             <div className="answers">
-              <button onClick={() => handleChoice("ჩატი Nova-სთან")}> ჩატი Nova-სთან </button>
+              <button onClick={() => handleChoice("ჩატი Nova-სთან")}>
+                {" "}
+                ჩატი Nova-სთან{" "}
+              </button>
               <button onClick={() => handleChoice("განახლების აღწერა")}>
                 განახლების აღწერა
               </button>
@@ -122,8 +127,16 @@ function App() {
 
             {showFollowUpChoices && (
               <div className="answers">
-                <button onClick={() => handleFollowUpChoice("მსურს")}> მსურს </button>
-                <button onClick={() => handleFollowUpChoice("არა, მოგვიანებით")}> არა, მოგვიანებით </button>
+                <button onClick={() => handleFollowUpChoice("მსურს")}>
+                  {" "}
+                  მსურს{" "}
+                </button>
+                <button
+                  onClick={() => handleFollowUpChoice("არა, მოგვიანებით")}
+                >
+                  {" "}
+                  არა, მოგვიანებით{" "}
+                </button>
               </div>
             )}
 
@@ -140,7 +153,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="allforone" element={<AllForOnePage />} />
-            <Route path="nova" element={<Nova />} /> 
+            <Route path="nova" element={<Nova />} />
           </Routes>
         </main>
 
